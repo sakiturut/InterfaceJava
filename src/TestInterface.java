@@ -4,11 +4,12 @@ public class TestInterface {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		IDatabaseCRUD databaseCRUDMySql= new MySql();
-		dbAcces(databaseCRUDMySql);	
+		IDatabaseCRUD databaseCRUD;
+		databaseCRUD= new MySql();
+		dbAcces(databaseCRUD);	
 		
-		IDatabaseCRUD databaseCRUDOracleSql= new OracleSql();
-		dbAcces(databaseCRUDOracleSql);
+		databaseCRUD= new OracleSql();
+		dbAcces(databaseCRUD);
 
 	}
 	
