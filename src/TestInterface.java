@@ -11,6 +11,9 @@ public class TestInterface {
 		
 		databaseCRUD= new OracleSql();
 		dbAcces(databaseCRUD);
+		
+		databaseCRUD.displayMsg();
+		IDatabaseCRUD.info();
 
 	}
 	
